@@ -1,0 +1,29 @@
+.survey-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.question-title {
+    text-decoration: underline;
+    text-decoration-color: #5843E4;
+}
+
+.question-content {
+    margin: 30px;
+}
+
+@keyframes rotate {
+    from { transform: rotate(0deg) }
+    to { transform: rotate(360deg) }
+}
+
+.loader {
+    padding: 10px;
+    border: 6px solid #5843E4;
+    border-bottom-color: transparent;
+    border-radius: 22px;
+    animation: rotate 1s infinite linear;
+    height: 0;
+    width: 0;
+}

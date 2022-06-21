@@ -1,0 +1,43 @@
+.profile-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.page-title {
+    font: 30px;
+    color: black;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.page-subtitle {
+    font-size: 20px;
+    color: #8186a0;
+    font-weight: 300;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.cards-container {
+    display: grid;
+    gap: 24px;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-content: center;
+}
+
+@keyframes rotate {
+    from { transform: rotate(0deg) }
+    to { transform: rotate(360deg) }
+}
+
+.loader {
+    padding: 10px;
+    border: 6px solid #5843E4;
+    border-bottom-color: transparent;
+    border-radius: 22px;
+    animation: rotate 1s infinite linear;
+    height: 0;
+    width: 0;
+}
